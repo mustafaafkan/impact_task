@@ -19,7 +19,7 @@ class CreditPaymentController extends Controller
     {
         Validator::make($request->input('formData'), [
             'credit_number' => 'required|integer|exists:credits',
-            'monthly_installment' => 'required|decimal:2'
+            'monthly_installment' => 'required'
         ])->validate();
 
         $payment = $this->service->createMonthlyInstallment($request->input('formData'));
