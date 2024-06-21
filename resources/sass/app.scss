@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+[v-cloak] {
+    display: none;
+}
